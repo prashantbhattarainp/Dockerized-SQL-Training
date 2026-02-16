@@ -7,14 +7,10 @@ A safe, Dockerized environment to practice SQL Injection attacks. This project s
 Clone the repo:
 
 Bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
-cd YOUR_REPO_NAME
 Run with Docker:
-
-Bash
 docker compose up --build
 Open in Browser:
-Go to http://localhost:5000
+Go to your local host
 
 ✨ Key Features
 Vulnerable Login: Practice bypassing authentication on the Student and Faculty portals.
