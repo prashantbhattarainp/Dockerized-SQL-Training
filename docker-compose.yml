@@ -1,0 +1,30 @@
+
+services:
+  # Service 1: Our Python Web Application
+  webapp:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      - DB_HOST=db
+      - DB_USER=user
+      - DB_PASSWORD=password
+      - DB_NAME=school_db
+    depends_on:
+      - db
+
+  # Service 2: The MySQL Database
+  db:
+    image: mysql:8.0
+    restart: always
+    environment:
+      MYSQL_DATABASE: 'school_db'
+      MYSQL_USER: 'user'
+      MYSQL_PASSWORD: 'password'
+      MYSQL_ROOT_PASSWORD: 'rootpassword' # Required by MySQL image
+    volumes:
+      - ./db:/docker-entrypoint-initdb.d
+      - db-data:/var/lib/mysql
+
+volumes:
+  db-data:

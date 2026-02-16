@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+
+# Docker
+.docker/
+
+# Database Data (IMPORTANT: Don't upload the live DB files)
+db_data/
+mysql-data/
+
+# OS specific
+.DS_Store
+Thumbs.db
