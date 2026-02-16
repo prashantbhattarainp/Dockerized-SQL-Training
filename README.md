@@ -1,4 +1,6 @@
 🛡️ SQL Injection Training Lab
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
 A safe, Dockerized environment to practice SQL Injection attacks. This project simulates a vulnerable school website to demonstrate how attacks work and how to fix them.
 
 🚀 Quick Start
